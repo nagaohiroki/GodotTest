@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://chicdtr8nq8ra"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_33b0c"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.475409, 0.879765, 0, -0.879765, 0.475409, -0.465335, 1.32356, -0.180139)
+
+[node name="SoftBody3D" type="SoftBody3D" parent="."]
+transform = Transform3D(0.87964, -0.388139, 0.27492, 0.47564, 0.717819, -0.508432, 0, 0.578, 0.816037, -0.257964, 2.91714, -0.415445)
+mesh = SubResource("BoxMesh_33b0c")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(11.851, 0, 0, 0, 0.319094, 0, 0, 0, 8.1087, 0, 0, 0)
+use_collision = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.65, 5.782)
